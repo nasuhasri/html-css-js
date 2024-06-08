@@ -73,10 +73,44 @@
       .parent-container1 {
         background-color: #f87171;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        height: 100%;
-        width: 100%;
+        /* based on parent element, 100% of siapa, but parent kena ada fixed width and height */
+        /* bapak ada fixed width/height, cucu 100% */
+        /* height: 100%; */
+        /* width: 100%; */
+      }
+
+      @media (max-width: 480px) {
+        .parent-container1 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .nest-container1 {
+        background-color: #fcd34d;
+        height: 700px;
+        width: 700px;
+      }
+
+      .nest-container2 {
+        background-color: #818cf8;
+        height: 50%;
+        width: 50%;
+      }
+
+      .nest-container3 {
+        background-color: antiquewhite;
+        /* ambil 100% height based on screen size tu */
+        height: 100vh;
+        width: 10vw;
+      }
+
+      .nest-container3 p {
+        /* 10% of our view width */
+        /* font size always rem -- supaya adapt kat different browser */
+        font-size: 1rem;
       }
 
       .itemEx3 {
@@ -175,6 +209,20 @@
 
     <br /><br />
 
+    <!-- Exercise 3 -->
+    <div class="nest-container1">
+      <div class="nest-container2">
+        <div class="nest-container3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            repellendus at nihil doloribus praesentium voluptatibus laborum et
+            quod perferendis pariatur deleniti molestias, veritatis dignissimos
+            corporis assumenda laudantium ratione. Sunt, atque.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="parent-container1">
       <div class="itemEx3">
         <div class="item-title">
@@ -258,10 +306,10 @@
 
     <br /><br />
 
-    <div class="containerEx4">
+    <!-- <div class="containerEx4">
       test
       <div class="container1Ex4">test</div>
-    </div>
+    </div> -->
 
     <br /><br />
 

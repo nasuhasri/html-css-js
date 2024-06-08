@@ -13,3 +13,9 @@
   height: 100px;
   background-color: aqua;
 }
+
+/* maintain aspect ratio video and prevent layout shift */
+.video {
+  width: 100%;
+  height: auto;
+}

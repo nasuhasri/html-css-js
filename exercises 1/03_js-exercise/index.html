@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - Basic JS</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <h1 id="headingText" class="heading-text">
+      Welcome to Basic <span class="text-primary">JS</span> Exercise!
+    </h1>
+    <section class="exercise-section exercise-section--1">
+      <h2 class="exercise-section__title">
+        Exercise 1 - Console log the h1 text
+      </h2>
+      <div class="exercise-section__content">
+        <p>Create a function and call the function to execute console log.</p>
+      </div>
+    </section>
+    <section class="exercise-section exercise-section--2">
+      <h2 class="exercise-section__title">
+        Exercise 2 - Change the text below from 'Hello World!' to 'Lorem Ipsum'
+      </h2>
+      <div class="exercise-section__content">
+        <p id="helloWorld">Hello World!</p>
+      </div>
+    </section>
+    <section class="exercise-section exercise-section--3">
+      <h2 class="exercise-section__title">
+        Exercise 3 - Create an array of object. The object should contain the
+        key 'fruit' and value is a string value. Iterate the array and output
+        the value of the object using console log.
+      </h2>
+      <div class="exercise-section__content">
+        <p>
+          Use forEach function to iterate over the array. Console log the value
+          of each array item.
+        </p>
+      </div>
+    </section>
+    <section class="exercise-section exercise-section--4">
+      <h2 class="exercise-section__title">
+        Exercise 4 - Below is a card with image and some descriptions. On the
+        right side, create the same card but populate the image and the text
+        using Javascript.
+      </h2>
+      <div class="exercise-section__content">
+        <div id="arrayFruit"></div>
+        <div class="card-container--1">
+          <div class="card">
+            <div class="card__image-container">
+              <img
+                src="./assets/imgs/featured_story_image_1.png"
+                alt="Mads Nipper"
+              />
+            </div>
+            <div class="card__content">
+              <div class="card__label">Capital Markets Day 2023</div>
+              <div class="card__description">
+                Find out what happened on 8 June. View presentations,
+                transcripts,and watch a recording of our event in London.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="exercise4CardContainer" class="card-container--2"></div>
+      </div>
+    </section>
+    <section class="exercise-section exercise-section--5">
+      <h2 class="exercise-section__title">
+        Exercise 5 - Display 6 cards in the grid layout below. The cards should
+        be populated using JS.
+      </h2>
+      <div id="exercise5GridContainer" class="exercise-section__content"></div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
